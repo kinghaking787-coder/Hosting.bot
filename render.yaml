@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: Dark_Hakersking-host
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot_host.py
+    healthCheckPath: /
+    envVars:
+      - key: 9108550231:AAEdiPe9ONIeiFJz32v6vLKT8k9U9EsefxM
+        sync: false
+      - key: 8713590918
+        sync: false
+      - key: DATA_DIR
+        sync: false
